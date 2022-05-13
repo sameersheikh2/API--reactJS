@@ -4,7 +4,7 @@ import MoviesList from "./components/MoviesList";
 import "./App.css";
 
 function App() {
-  const [movies, setMovies] = useState("");
+  const [movies, setMovies] = useState([]);
   function fetchDataHandler() {
     fetch("https://swapi.py4e.com/api/films")
       .then((response) => {
